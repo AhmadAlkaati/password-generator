@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgb(4, 27, 27);
+  overflow: hidden;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+main {
+  background: rgb(37, 37, 37);
+  padding: 2rem;
+  header {
+    h1 {
+      color: white;
+    }
+    margin-bottom: 2rem;
+  }
+  .content {
+    width: 350px;
+    .output {
+      display: flex;
+      align-items: center;
+      background: white;
+      width: 100%;
+      height: 50px;
+      position: relative;
+      font-weight: 600;
+
+      .output-text {
+        width: 80%;
+        padding: 0 0.5rem;
+      }
+      .copy {
+        padding: 0.8rem 0.5rem;
+        height: 30px;
+        position: absolute;
+        right: 0.5rem;
+        display: flex;
+        align-items: center;
+        background: grey;
+      }
+      .copy:hover {
+        background: rgba(128, 128, 128, 0.473);
+      }
+    }
+    .options {
+      color: white;
+      width: 100%;
+
+      .option {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0.5rem 0;
+
+        .password-length {
+          width: 50px;
+        }
+      }
+    }
+
+    .generate {
+      padding: 1rem;
+      border-radius: 0.2rem;
+      margin-top: 1rem;
+      width: 100%;
+      font-weight: 600;
+      background: grey;
+      color: rgb(225, 234, 241);
+    }
+    .generate:hover {
+      background: rgba(128, 128, 128, 0.473);
+    }
+    .msg {
+      color: honeydew;
+      margin-top: 0.5rem;
+
+      text-decoration: underline red;
+    }
+    button {
+      font-family: 'Raleway', sans-serif;
+      cursor: pointer;
+    }
+  }
+}
+
+textarea {
+  position: absolute;
+  bottom: -10rem;
+}
+
+.social {
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+
+    i {
+      margin: 0 0.4rem;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  main {
+    padding: 1rem;
+    .content {
+      width: 320px;
+    }
+  }
+}

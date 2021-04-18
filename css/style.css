@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #041b1b;
+  overflow: hidden;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+main {
+  background: #252525;
+  padding: 2rem;
+}
+
+main header {
+  margin-bottom: 2rem;
+}
+
+main header h1 {
+  color: white;
+}
+
+main .content {
+  width: 350px;
+}
+
+main .content .output {
+  display: flex;
+  align-items: center;
+  background: white;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  font-weight: 600;
+}
+
+main .content .output .output-text {
+  width: 80%;
+  padding: 0 0.5rem;
+}
+
+main .content .output .copy {
+  padding: 0.8rem 0.5rem;
+  height: 30px;
+  position: absolute;
+  right: 0.5rem;
+  display: flex;
+  align-items: center;
+  background: grey;
+}
+
+main .content .output .copy:hover {
+  background: rgba(128, 128, 128, 0.473);
+}
+
+main .content .options {
+  color: white;
+  width: 100%;
+}
+
+main .content .options .option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+main .content .options .option .password-length {
+  width: 50px;
+}
+
+main .content .generate {
+  padding: 1rem;
+  border-radius: 0.2rem;
+  margin-top: 1rem;
+  width: 100%;
+  font-weight: 600;
+  background: grey;
+  color: #e1eaf1;
+}
+
+main .content .generate:hover {
+  background: rgba(128, 128, 128, 0.473);
+}
+
+main .content .msg {
+  color: honeydew;
+  margin-top: 0.5rem;
+  text-decoration: underline red;
+}
+
+main .content button {
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+}
+
+textarea {
+  position: absolute;
+  bottom: -10rem;
+}
+
+.social {
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+.social a i {
+  margin: 0 0.4rem;
+}
+
+@media (max-width: 400px) {
+  main {
+    padding: 1rem;
+  }
+  main .content {
+    width: 320px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
