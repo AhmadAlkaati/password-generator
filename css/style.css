@@ -142,8 +142,15 @@ textarea {
   main {
     padding: 1rem;
   }
+  main header h1 {
+    font-size: 20px;
+    text-align: center;
+  }
   main .content {
     width: 320px;
+  }
+  main .content .options .option label {
+    font-size: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */
